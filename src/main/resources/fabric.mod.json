@@ -20,6 +20,10 @@
   "entrypoints": {
     "main": [
       "ru.xzeldon.removeblockoutline.RemoveBlockOutline"
+    ],
+
+    "client": [
+      "ru.xzeldon.removeblockoutline.RemoveBlockOutlineClient"
     ]
   },
   "mixins": [

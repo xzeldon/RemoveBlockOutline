@@ -10,11 +10,19 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import ru.xzeldon.removeblockoutline.RemoveBlockOutlineClient;
+import ru.xzeldon.removeblockoutline.config.RemoveBlockOutlineConfig;
 
 @Mixin(WorldRenderer.class)
 public class RemoveBlockOutlineMixin {
+	private static RemoveBlockOutlineConfig config;
+
 	@Inject(method = "drawBlockOutline", at = @At("HEAD"), cancellable = true)
 	private void onDrawBlockOutline(MatrixStack matrixStack, VertexConsumer vertexConsumer, Entity entity, double cameraX, double cameraY, double cameraZ, BlockPos blockPos, BlockState blockState, CallbackInfo ci) {
-		ci.cancel();
+		config = RemoveBlockOutlineClient.CONFIG;
+
+		if (!config.isEnableBlockOutline()) {
+			ci.cancel();
+		}
 	}
 }
