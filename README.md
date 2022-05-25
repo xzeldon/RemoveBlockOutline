@@ -2,6 +2,8 @@
 
 This mod removes the outlines that get drawn when the player mouse over a block.
 
+> You can Enable/Disable block outline on tilde (`) key. Of course, you can change this key in game settings.
+
 The idea of the mod was taken from [Remove Mouseover Highlight Mod](https://www.curseforge.com/minecraft/mc-mods/remove-mouseover-highlight).
 But this mod uses a Forge mod loader but all the mods I use use a Fabric mod loader.
 So i decided to create this mod =)
