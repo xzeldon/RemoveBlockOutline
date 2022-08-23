@@ -11,8 +11,12 @@ So i decided to create this mod =)
 ![scrn1](https://i.imgur.com/jTeW1nQ.jpg)
 ![scrn2](https://i.imgur.com/znVbxXC.jpg)
 
+> Mirror on my [<img src="https://git.zeldon.ru/assets/img/logo.svg" align="center" width="20" height="20"/> Git](https://git.zeldon.ru/zeldon/RemoveBlockOutline)
+
 # Download
+
 Download last version from [releases](https://github.com/xzeldon/RemoveBlockOutline/releases).
 
 # Install
+
 Download and install [Fabric](https://fabricmc.net/use/installer/) then place `.jar` file to the `mods` folder.
